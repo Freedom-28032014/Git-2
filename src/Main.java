@@ -3,16 +3,16 @@ public class Main {
         SalesManager salesManager = new SalesManager(new long[]{});
         long max = salesManager.max();
         System.out.println(max);
-        int min = salesManager.min(max);
-        int sum = 0;
-        for (int s : salesManager.sales) {
+        long min = salesManager.min(max);
+        long sum = 0;
+        for (long s : salesManager.sales) {
             sum += s;
         }
-        int length = salesManager.sales.length;
+        long length = salesManager.sales.length;
         System.out.println(mediumCropped(min, max, sum, length));
     }
 
-    public static int mediumCropped(int max, int min, int sum, int length) {
+    public static long mediumCropped(long max, long min, long sum, long length) {
         if (length == 1) {
             return sum;
         }

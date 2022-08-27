@@ -15,9 +15,9 @@ public class SalesManager {
         return max;
     }
 
-    public int min(int max) {
-        int min = max;
-        for (int sale : sales) {
+    public long min(long max) {
+        long min = max;
+        for (long sale : sales) {
             if (sale < min) {
                 min = sale;
             }
