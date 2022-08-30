@@ -8,18 +8,10 @@ public class Main {
         for (long s : salesManager.sales) {
             sum += s;
         }
-        long length = salesManager.sales.length;
-        System.out.println(mediumCropped(min, max, sum, length));
-    }
+        int length = salesManager.sales.length;
+        System.out.println(salesManager.mediumCropped(min, max, sum, length));
 
-    public static long mediumCropped(long max, long min, long sum, long length) {
-        if (length == 1) {
-            return sum;
-        }
-        if (length == 2) {
-            return sum / 2;
-        }
-        return (sum - (max + min)) / (length - 2);
     }
-
 }
+
+
